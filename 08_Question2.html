@@ -1,0 +1,93 @@
+
+<!--W.A.P to create job application-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <title>Job Application Form</title>
+    <link rel="shortcut icon" href="./Ai.jpg" type="image/x-icon">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <h1>Job Application</h1>
+            <br//>
+            <br//>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="input1">
+            <br//>
+            <br//>
+
+            
+            <label for="emailid">Email:</label>
+            <input type="email" id="emailid" name="input2">
+            <br//>
+            <br//>
+
+            <label for="Phonenumber">Phone:</label>
+            <input type="tel" id="Phonenumber" name="input3">
+            <br//>
+            <br//>
+
+            <label for="selectfile">Resume:</label>
+            <input type="file" id="selectfile" name="input4">
+            <br//>
+            <br//>
+
+            <label for="expy">Experience(years):</label>
+            <input type="number" id="expy" name="input5" min="0" max="50">
+
+            <fieldset>
+                <legend>Skills:</legend>
+                <label for="checkbox1">HTML</label>
+                <input type="checkbox" id="checkbox1" name="input6">
+                <br//>
+                
+                <label for="checkbox2">CSS</label>
+                <input type="checkbox" id="checkbox2" name="input7">
+                <br//>
+
+                <label for="checkbox3">JavaScript</label>
+                <input type="checkbox" id="checkbox3" name="input8">
+                <br//>
+
+                </select>
+            </fieldset>
+
+            <label for="Education1">Highest Education:</label>
+            <select name="Education" id="Education1">
+                <option value="0th">Choose here</option>
+                <option value="1st">10th</option>
+                <option value="2nd">12th</option>
+                <option value="3rd">Graduation</option>
+                <option value="4th">Post Graduation</option>
+                <option value="5th">PhD</option>
+                <option value="6th">other</option>
+            </select>
+            <br//>
+
+            <p>Availability:</p>
+
+            <label for="radio1">Full-time</label>
+            <input type="radio" id="radio1" name="input9">
+            <br//>
+            <label for="radio2">Part-time</label>
+            <input type="radio" id="radio2" name="input10">
+            <br//>
+
+            <label for="textarea1">Additional Comments:</label>
+            <textarea name="textarea1" id="textarea1" col="80" rows="10" placeholder="Discription here..."></textarea>
+            <br//>
+            <br//>
+
+            <button>Submit</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
