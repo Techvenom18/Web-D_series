@@ -1,0 +1,74 @@
+
+<!-- W.A.P to create a complex form-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+     <title>Advanced Form</title>
+     <link rel="shortcut icon" href="./Ai.jpg" type="image/x-icon">
+     <script src="./script.js"></script>
+</head>
+<body>
+    <fieldset>
+        <form>
+            <h1>Complex Form</h1>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="input1">
+                <label for="emailid">Email:</label>
+                <input type="email" id="emailid" name="input2">
+                <label for="phonenumber">Phone:</label>
+                <input type="tel" id="phonenumber" name="input3">
+                <label for="datepicker1"> Date of Birth:</label>
+                <input type="date" id="datepicker1" name="datepicker">
+                <label>Gender:</label>
+                <label for="radio1">Male</label>
+                <input type="radio" id="radio1" name="input5">
+                <label for="radio2">Female</label>
+                <input type="radio" id="radio2" name="input6">
+                <label for="countryname">Country</label>
+                <select name="country" id="countryname">
+                    <Option value="1st">Choose here</Option>
+                    <Option value="2nd">India</Option>
+                    <Option value="3rd">Ierland</Option>
+                    <Option value="4th">America</Option>
+                    <Option value="5th">Canada</Option>
+                    <Option value="6th">London</Option>
+                    <Option value="7th">UK</Option>
+                    <Option value="8th">US</Option>
+                    <Option value="9th">L.A</Option>
+                    <Option value="10th">Gapan</Option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Address</legend>
+                <label for="streetname">Street</label>
+                <input type="text" id="streetname" name="input7">
+                <label for="Cityname">City</label>
+                <input type="text" id="Cityname" name="input8">
+                <label for="statename">State</label>
+                <input type="text" id="statename" name="input9">
+                <label for="pin">Pin code</label>
+                <input type="text" id="pin" name="input10">
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Information</legend>
+
+                <label for="textarea1">Comments</label>
+                <textarea name="textarea1" id="textarea1" cols="60" rows="10" placeholder="Add Comment here..."></textarea>
+                <label for="checkbox1">I agree to the terms of service</label>
+                <input type="checkbox" id="checkbox1" name="input11">
+            </fieldset>
+
+            <button>Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>
