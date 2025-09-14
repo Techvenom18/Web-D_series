@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Posistion Property</title>
+    <style>
+        .container{
+            position: relative;
+            height: 5000px;
+            background-color: beige;
+        }
+        .image2{
+            position: fixed;
+            left: 1200px;
+            
+        }
+
+        .audio{
+            position: sticky;
+            top: 600px;
+            left: 500px;
+           
+        }
+
+        fieldset{
+            height: 500px;
+        }
+
+        /* by defalut static position hoti h */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img 
+        src="./Ai.jpg" 
+        alt="Logo"
+        class="image1"
+        >
+
+        <img 
+        src="./profile.png.png" 
+        alt="profile"
+        class="image2"
+        height="500px"
+        >
+
+        <iframe src="./audiofile.mp3" frameborder="0" control class="audio"></iframe>
+
+    </div>
+
+    <fieldset>
+        <h1>Dear Saarthi...</h1>
+    </fieldset>
+</body>
+</html>
