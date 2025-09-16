@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <link rel="shortcut icon" href="./Ai.jpg" type="image/x-icon">
+    <style>
+        .container{
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+        }
+        #leftbox{
+            width: 50%;
+            border: 3px solid rgb(232, 95, 10);
+            margin: 15px 15px ;
+            padding: 5px;
+            background-color: aquamarine;
+            
+            #para1{
+                border: 3px solid rgb(28, 45, 4);
+            
+            }
+            #para2{
+                border: 3px solid goldenrod;
+            }
+        }
+        #rightbox{
+            border: 2px solid red;
+            width: 48%;
+            background-color: bisque;
+            margin: 15px 15px;
+            padding: 5px;
+        }
+
+        @media (min-width: 0px) and (max-width: 680px){
+            .container{
+                flex-direction: column;
+                background-color: chocolate;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="leftbox">
+            <p id="para1">TEXT</p>
+            <p id="para2">Text</p>
+        </div>
+        <div class="box" id="rightbox">
+            <img src="./zkakashi.webp" alt="" width: 555px;>
+        </div>
+    </div>
+</body>
+</html>
+<br//>
+<br//>
+
+
+
+<!-- Question 2 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container2{
+            border: 2px solid black;
+            background-color: cornflowerblue;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .box{
+            #box1{
+                border: 3px solid black;
+                background-color: pink;
+                margin: 5px 5px;
+                padding: 3px 3px;
+                width: 5rem;
+                height: 5rem;
+
+            }
+
+            #box2{
+                border: 3px solid black;
+                background-color: yellowgreen;
+                margin: 5px 5px;
+                padding: 3px 3px;
+                width: 5rem;
+                height: 5rem;
+
+            }
+
+            #box3{
+                border: 3px solid black;
+                background-color: yellow;
+                margin: 5px 5px;
+                padding: 3px 3px;
+                width: 5rem;
+                height: 5rem;
+
+            }
+
+            #box4{
+                border: 3px solid black;
+                background-color: skyblue;
+                margin: 5px 5px;
+                padding: 3px 3px;
+                width: 5rem;
+                height: 5rem;
+
+            }
+        }
+
+        @media (min-width: 640px){
+            .container2{
+                background-color: aqua;
+                flex-direction: column;
+            }
+        }
+
+         @media (max-width: 640px){
+            .container2{
+                
+                flex-direction: row;
+            }
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container2" >
+        <div class="box">
+            <div class="box" id="box1">A</div>
+            <div class="box" id="box2">B</div>
+            <div class="box" id="box3">C</div>
+            <div class="box" id="box4">D</div>
+        </div>
+    </div>
+ </body>
+ </html>
