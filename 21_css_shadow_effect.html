@@ -1,0 +1,86 @@
+<!--Box-shadow-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --custom-height: 800px;
+            --custom-width: 47%;
+        }
+        .container{
+            border: 2px solid black;
+            background-color: skyblue;
+            margin: 5px;
+            padding: 6px;
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+           @media (min-width:600px){
+                flex-direction: column;
+            }
+
+            @media (max-width:601px){
+                flex-direction: row;
+            }
+
+        }
+
+        #b1{
+            border: 2px solid brown;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 10px;
+            height: 600px;
+            font-size: x-large;
+            background-color: aqua;
+            justify-content: center;
+            width: var(--custom-width);
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+            box-shadow: 10px 10px 8px antiquewhite;
+            
+        }
+
+        #b2{
+            border: 2px solid brown;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 10px;
+            font-size: x-large;
+            background-color: antiquewhite;
+            justify-content: center;
+             height: 600px;
+            width: var(--custom-width);
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+            box-shadow: 10px 10px 8px beige;
+        }
+        h1{
+            text-shadow: 4px 3px 1px white;
+            text-align: center;
+            color: rgb(232, 169, 9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="b1">
+            <h1>Box 1</h1>
+            <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maiores corporis unde, molestiae atque dolorum alias fugiat laudantium impedit ipsa ut omnis necessitatibus consequatur sed minima voluptatem nihil suscipit aut expedita a commodi earum! Qui quaerat, praesentium provident rerum alias saepe, laborum minus voluptatibus nam doloribus perferendis consequatur quidem repellat ut fugit magni quibusdam atque cumque. Rerum distinctio, debitis voluptatem est cupiditate officia laudantium numquam laboriosam ipsam dolore quam eligendi voluptate ipsum quae autem totam veniam! Fugiat placeat quas iusto eaque neque, quibusdam fugit, laudantium odio nisi perferendis illo repellendus! Fugiat id perferendis nihil sequi. Incidunt obcaecati sunt qui beatae!</p1>
+        </div>
+        <div class="box" id="b2">
+            <h1>Box 2</h1>
+            <p1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam numquam totam minus voluptates animi sequi velit laborum quos provident saepe accusamus, ea dignissimos, aut incidunt qui, sunt corporis unde earum suscipit blanditiis? Optio quod nulla consequatur, sint explicabo maxime nesciunt est ad tempora ullam perferendis cumque maiores quas nobis. Aperiam non eveniet eos sapiente! Incidunt distinctio sequi cumque repellat a corrupti impedit maxime repudiandae at voluptates! Cum, dicta quaerat consequatur voluptate, rem expedita ipsam sed quo doloribus perferendis blanditiis non necessitatibus at laboriosam eaque dolore aperiam veritatis fugit cumque deserunt animi. Natus, deleniti. Quasi nihil error voluptates quo explicabo adipisci.</p1>
+        </div>
+    </div>
+</body>
+</html>
