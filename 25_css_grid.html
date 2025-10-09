@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid concept</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            background-color: bisque;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            padding: 1px 1px;
+            row-gap: 10px;
+            column-gap: 9px;
+            /* grid-template-rows: repeat(5,1fr);
+            grid-template-columns: repeat(3,1fr); */
+            justify-content: center;
+            border: 5px solid rgb(153, 138, 168);
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
+            
+        }
+
+        .item{
+            border: 2px solid black;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            place-items: center;
+            font-size: 2rem;
+            margin: 5px;
+        }
+
+       @media (min-width:700px){
+        .container{
+            grid-template-rows: repeat(5,1fr);
+            grid-template-columns: repeat(3,1fr);
+            }
+
+            .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .sidebar{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .C1{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item sidebar">Sidebar</div>
+        <div class="item C1">Content1</div>
+        <div class="item C2">Content2</div>
+        <div class="item C3">Content3</div>
+        <div class="item footer">Footer</div>
+    </div>
+</body>
+</html>
+<br//>
+<br//>
+
+
+<!--grid question 2 ---> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container1{
+            background: #f58686;
+            border: 5px;
+            padding: 15px 15px;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            border: 5px solid rgb(110, 17, 7);
+        }
+
+        .item2{
+            border: 2px solid black;
+            background-color: aquamarine;
+            font-size: 2rem;
+            
+        }
+        
+        @media (min-width:700px){
+            .container1{
+                 grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            .first{
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            grid-column-start: 1;
+            grid-column-end: 3;
+            }
+
+            .second{
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+
+            .seven{
+            grid-row-start: 3;
+             grid-row-end: 5;
+
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+
+            .six{
+                grid-row-start: 3;
+                grid-row-end: 5;
+
+                grid-column-start: 2;
+
+
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item2 first">1</div>
+        <div class="item2 second">2</div>
+        <div class="item2 third">3</div>
+        <div class="item2 four">4</div>
+        <div class="item2 five">5</div>
+        <div class="item2 six">6</div>
+        <div class="item2 seven">7</div>
+        <div class="item2 eight">8</div>
+    </div>
+</body>
+</html>
+<br//>
+<br//> 
+
+
+<!-- grid question-3 -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container3{
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+            padding: 15px 15px;
+            border: 5px solid rgb(237, 165, 165);
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(13,1fr);
+
+        }
+
+        .item{
+            border: 2px solid black;
+            background-color: #fff;
+            font-size: 1.5rem;
+            
+        }
+        
+
+
+        @media(min-width: 610px){
+
+            .container3{
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,1fr);
+            }
+
+            .first{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-color: blueviolet;
+            }
+
+            .eight{
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                grid-row-start: 3;
+                grid-row-end: 5;
+                background: #f9c6c6;
+            }
+
+            .th{
+                grid-column-start: 1;
+                grid-column-end: 5;
+            background: #c3c2c2;
+            }
+
+        }
+    </style>
+
+ </head>
+ <body>
+    <div class="container3">
+        <div class="item first">1</div>
+        <div class="item 2">2</div>
+        <div class="item 3">3</div>
+        <div class="item 4">4</div>
+        <div class="item 5">5</div>
+        <div class="item 6">6</div>
+        <div class="item 7">7</div>
+        <div class="item eight">8</div>
+        <div class="item 9">9</div>
+        <div class="item 10">10</div>
+        <div class="item 11">11</div>
+        <div class="item 12">12</div>
+        <div class="item th">13</div>
+
+    </div>
+ </body>
+ </html>
+
+ 
